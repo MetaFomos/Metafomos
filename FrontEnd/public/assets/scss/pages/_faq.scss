@@ -1,0 +1,139 @@
+/* Help Section  Start */
+
+.help-section{
+    aside{
+        background-image: url('../images/help-aside.jpg');
+        background-position: center;
+        background-size: cover;
+        padding: 20px 30px 30px;
+        border-radius: 20px;
+        ul{
+            li{
+                margin-bottom: 5px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                a{
+                    font-size: 18px;
+                    line-height: 50px;
+                    display: block;
+                    border-radius: 10px;
+                    transition: $transition;
+                    color: #fff;
+                    i{
+                        margin-right: 7px;
+                        font-size: 16px;
+                        color: #eee;
+                    }
+                    &.active,
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.2);
+                        padding-left: 15px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .help-content{
+        .heading-title{
+            font-size: 54px;
+            line-height: 64px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 60px;
+        }
+        .content-title{
+            font-size: 28px;
+            line-height: 38px;
+            font-weight: 600;
+            color: #fff; 
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .h-inner-content{
+            margin-bottom: 60px;
+            ul{
+                li{
+                    p{
+                        color: #e0dffa;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+            }
+            .sorteo-accordion .card-header {
+                padding: 0;
+                border-radius: 10px;
+              }
+              .sorteo-accordion .card-header .btn-link {
+                padding: 20px 30px;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                text-align: left;
+                color: #d7d5ff;
+                font-size: 22px;
+                font-weight: 600;
+                background-color: #28075a;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                position: relative;
+                border-radius: 0px;
+              }
+            
+              .sorteo-accordion .card-header .btn-link.collapsed::before {
+                position: absolute;
+                content: "\f107";
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                top: 15px;
+                right: 30px;
+                font-size: 22px;
+                color: #85878f;
+              }
+              .sorteo-accordion .card-header .btn-link::before {
+                position: absolute;
+                content: "\f106";
+                font-size: 22px;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                top: 15px;
+                right: 30px;
+                color: #85878f;
+              }
+              .sorteo-accordion .card .card-header {
+                border: none;
+              }
+              .sorteo-accordion .card-body {
+                margin-top: 10px;
+                padding: 20px 30px;
+              }
+              .sorteo-accordion .card-header .btn-link:hover,
+              .sorteo-accordion .card-header .btn-link:focus {
+                text-decoration: none;
+              }
+             
+              .sorteo-accordion .card {
+                border: none;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                overflow: hidden;
+                background: #28075a;
+              }
+            
+        }
+    }
+}
+
+/* Help Section  End */
+
+
+  
+
+
+
+
+
+
+
+

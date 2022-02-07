@@ -1,0 +1,380 @@
+/*  Affiliate Process area Start */
+
+.affiliate-process{
+    padding: 0px 0px 112px;
+    background: $bg-color2;
+    margin-top: -80px;
+}
+.single-process{
+    padding: 40px 40px 39px;
+    background: #141e47;
+    text-align: center;
+    position: relative;
+    transition: $transition;
+    img{
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 21px;
+
+    }
+    .title{
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+
+    .text{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+    .num{
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        font-size: 200px;
+        line-height: 200px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.05);
+    }
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+
+/*  Affiliate Process area End */
+
+
+/* Features Area Start */
+.affiliate-program{
+    background: $bg-color2;
+    padding: 0px 0px 90px;
+    .section-heading{
+        margin-bottom: 51px;
+    }
+    .single-program{
+        display: flex;
+        border: 1px solid rgb(39, 59, 113);
+        border-radius: 10px;
+        padding: 45px 30px 45px 45px;
+        background: none;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+        transition: $transition;
+        margin-bottom: 30px;
+        .icon{
+            margin-right: 45px;
+            margin-bottom: 0px;
+            background: #242e5a;
+            width: 125px;
+            height: 125px;
+            line-height: 120px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 10px solid #1c2748;
+                border-radius: 50%;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                top: 3%;
+                left: 3%;
+                width: 94%;
+                height: 94%;
+                border: 1px dashed rgba(255, 255, 255, 0.20);
+                border-radius: 50%;
+                z-index: 1;
+            }
+            &.one{
+                border:7px solid #f9314b;
+                border-radius: 50%;
+                text-align: center;
+                display: inline-block;
+                line-height: 110px;
+                box-shadow: 0px 0px 0px 15px rgba(#f9314b, 0.2), 0px 0px 0px 15px rgba(#f9314b, 0.2);
+                transition: $transition;
+            }
+            &.two{
+                border:7px solid #f67a1f;
+                border-radius: 50%;
+                text-align: center;
+                display: inline-block;
+                line-height: 110px;
+                box-shadow: 0px 0px 0px 15px rgba(#f67a1f, 0.2), 0px 0px 0px 15px rgba(#f67a1f, 0.2);
+                transition: $transition;
+            }
+            &.three{
+                border:7px solid #bc2cdd;
+                border-radius: 50%;
+                text-align: center;
+                display: inline-block;
+                line-height: 110px;
+                box-shadow: 0px 0px 0px 15px rgba(#bc2cdd, 0.2), 0px 0px 0px 15px rgba(#bc2cdd, 0.2);
+                transition: $transition;
+            }
+            &.four{
+                border:7px solid #6efcc3;
+                border-radius: 50%;
+                text-align: center;
+                display: inline-block;
+                line-height: 110px;
+                box-shadow: 0px 0px 0px 15px rgba(#6efcc3, 0.2), 0px 0px 0px 15px rgba(#6efcc3, 0.2);
+                transition: $transition;
+            }
+        }
+        .content{
+            flex: 1;
+            text-align: left;
+            align-self: center;
+            .title{
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $heading-color;
+                margin-bottom: 15px;
+            }
+            .link{
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $body-color;
+                margin-bottom: 0px;
+                transition: $transition;
+                i{
+                    font-size: 14px;
+                    position: relative;
+                    transition: $transition;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        top: 5px;
+                        left: 0;
+                        height: 3px;
+                        width: 80%;
+                        background: $body-color;
+                        border-radius: 50px;
+                    }
+                }
+                &:hover{
+                    color: $base-color;
+                    i{
+                        color: $base-color;
+                        padding-left: 10px;
+                        &::after{
+                            background: $base-color;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            transform: translateY(-10px);
+            .icon.one{
+                box-shadow: 0px 0px 0px 15px rgba(#f9314b, 0.2), 0px 0px 0px 30px rgba(#f9314b, 0.2);
+            }
+            .icon.two{
+                box-shadow: 0px 0px 0px 15px rgba(#f67a1f, 0.2), 0px 0px 0px 30px rgba(#f67a1f, 0.2);
+            }
+            .icon.three{
+                box-shadow: 0px 0px 0px 15px rgba(#bc2cdd, 0.2), 0px 0px 0px 30px rgba(#bc2cdd, 0.2);
+            }
+            .icon.four{
+                box-shadow: 0px 0px 0px 15px rgba(#6efcc3, 0.2), 0px 0px 0px 30px rgba(#6efcc3, 0.2);
+            }
+        }
+    }
+}
+/* Features Area End */
+
+
+/* Ref Commission Area Start  */
+.ref-commission{
+    padding: 113px 0px 120px;
+    background: $bg-color1;
+    position: relative;
+    .ab-img{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 40%;
+    }
+    .section-heading{
+        text-align: left;
+    }
+    .mybtn1{
+        margin-top: 22px;
+    }
+}
+/* Ref Commission Area End  */
+
+
+
+/* Marketing Tools Area Start */
+.marketing-tools{
+    padding: 112px 0px 86px;
+    background: $bg-color2;
+    .section-heading{
+        margin-bottom: 58px;
+    }
+    .single-tools{
+        text-align: center;
+        transition: $transition;
+        margin-bottom: 30px;
+        .icon{
+            img{
+                display: inline-block;;
+            }
+        }
+        .content{
+            .title{
+                font-size: 28px;
+                line-height: 38px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $heading-color;
+                margin-bottom: 15px;
+                margin-top: 21px;
+            }
+            .text{
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+}
+
+/* Marketing Tools Area End */
+
+
+/*Testimonial Area CSS Start*/
+.testimonial{
+	padding: 113px 0px 120px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -99;  
+        background: $bg-color1;
+    }
+	.section-heading{
+	  margin-bottom: 58px;
+    }
+    .testimonial-slider{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: -15px;
+            left: 3%;
+            width: 94%;
+            height: 100%;
+            border-radius: 6px;
+            z-index: -10;
+            background: rgba(255, 255, 255, 0.08);
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: -30px;
+            left: 5%;
+            width: 90%;
+            height: 100%;
+            border-radius: 6px;
+            z-index: -10;
+            background: rgba(255, 255, 255, 0.08);
+        }
+    }
+    
+	.single-testimonial{
+	  text-align: center;
+      background: #0b122e;
+      padding: 40px 30px 39px;
+      border-radius: 6px;
+      .people{
+          margin-bottom: 14px;
+		.img{
+		  display: inline-block;
+		  img{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			border: 5px solid $base-color;
+		  }
+		}
+		.title{
+		  margin-top: 23px;
+		  font-size: 28px;
+		  font-weight: 700;
+		  line-height: 38px;
+          color: #fff;
+          text-transform: uppercase;
+		  margin-bottom: 0px;
+		}
+		.designation{
+		  font-size: 14px;
+		  line-height: 24px;
+		  color: $base-color;
+          margin-bottom: 0px;
+          text-transform: uppercase;
+		}
+	  }
+	  .review-text{
+		p{
+		  margin-bottom: 0px;
+		  color: #fff;
+		  font-size: 28px;
+          line-height: 38px;
+          font-weight: 300;
+		}
+	  }
+
+	}
+    .owl-controls{
+        position: relative;
+        .owl-nav{
+            position: absolute;
+             top: 80px;
+             left: 50%;
+             transform: translateX(-50%);
+            display: inline-block;
+            .owl-prev,
+            .owl-next{
+                width: 40px;
+                height: 40px;
+                border:1px solid rgb(39, 59, 113);
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                display: inline-block;
+                margin: 0px 10px;
+                transition: $transition;
+                &:hover{
+                    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+                    border-color: #681f40;
+                }
+            }
+        }
+    }
+  }
+  /*Testimonial Area CSS End*/

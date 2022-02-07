@@ -1,0 +1,209 @@
+
+/* About page section Area Start */
+.about-section{
+    background: $bg-color2;
+    padding: 112px 0px 120px;
+    position: relative;
+    .ar{
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 600px;
+
+    }
+    .s1{
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 70%;
+    }
+    .s2{
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 70%;
+    }
+    .left-content{
+        text-align: left;
+        .section-heading{
+            text-align: left;
+            .text{
+                color: #dbdcf7;
+            }
+        }
+        .content-list{
+            display: block;
+            .s-list{
+                display: flex;
+                align-items: center;
+                float: left;
+                margin-right: 50px;
+                img{
+                    
+                    margin-right: 30px;
+                }
+                .content{
+                    flex: 1;
+                    font-size: 18px;
+                    line-height: 28px;
+                    p{
+                        margin-bottom: 0px;
+                    }
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+
+        }
+    }
+
+   
+}
+/* About page section Area End */
+
+/* Features Area Start */
+.features-section{
+    padding: 120px 0px 120px;
+    background: url(../images/featurebg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    .s1{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        max-height: 750px;
+    }
+    .s2{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        max-height: 750px;
+    }
+}
+.single-feature{
+    box-shadow: $s1;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    .img{
+        position: relative;
+        width: 100%;
+        height: 120px;
+        .shape{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .icon{
+            height: 100%;
+            width: auto;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .content{
+        padding-top: 30px;
+        h4{
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #dbdcf7;
+        }
+        p{
+            font-size: 18px;
+            line-height: 28px;
+            color: #dbdcf7;
+            margin-bottom: 0px;
+        }
+    }
+}
+/* Features Area End */
+
+/* Counter Area Start */
+.cuners3{
+    background: #1f0644;
+    padding: 120px 0px 120px;
+}
+/* Counter Area End */
+
+
+/* Team Area Start */
+.team-section{
+    background: url(../images/team-section-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0px 120px;
+    .section-heading{
+        margin-bottom: 90px;
+    }
+    .single-team{
+        .image{
+            position: relative;
+            .shape{
+                width: 100%;
+            }
+            .member{
+                position: absolute;
+                top: -35px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .link{
+                position: absolute;
+                bottom: 65px;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                right: 22%;
+                border-radius: 50%;
+                background-image: -moz-linear-gradient( 0deg, rgb(226,144,110) 0%, rgb(232,58,153) 100%);
+                background-image: -webkit-linear-gradient( 0deg, rgb(226,144,110) 0%, rgb(232,58,153) 100%);
+                background-image: linear-gradient( 0deg, rgb(226,144,110) 0%, rgb(232,58,153) 100%);
+            }
+            
+            h4{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 600;
+                color: #fff;
+                bottom: 7px;
+            }
+        }
+    }
+}
+/* Team Area End */
+
+
+/* join us area Start */
+.join_us_new{
+    padding: 40px 0px 0px;
+    background-color: #1f0644;
+    background-image: url(../images/joinus-bg3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    .section-heading{
+        margin-bottom: 0px;
+        .mybtn1{
+            margin-top: 30px;
+            display: inline-block;
+        }
+    }
+}
+/* join us area end */
+

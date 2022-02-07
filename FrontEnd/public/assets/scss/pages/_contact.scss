@@ -1,0 +1,138 @@
+/* Contact Area Start */ 
+.contact-section{
+    padding: 0px 0px 0px;
+    background-color: #1f0644;
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    .contact-area{
+        background-color: #1f0644;
+        margin-top: -250px;
+        padding: 40px 30px 40px;
+        border-radius: 20px;
+        h2{
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 700;
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .left-area{
+            padding: 40px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.105);
+            border-radius: 10px;
+            .form-group{
+                label{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                input{
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 50px;
+                    background: none;
+                    border: none;
+                    color: #6180c0;
+                    box-shadow: inset 0px 0px 4px 2px #00a2ff;
+                    padding: 0px 30px;
+                    &::placeholder{
+                        color: #6180c0;
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 20px;
+                    background: none;
+                    border: none;
+                    height: 150px;
+                    color: #6180c0;
+                    box-shadow: inset 0px 0px 4px 2px #00a2ff;
+                    padding: 20px 30px;
+                    &::placeholder{
+                        color: #6180c0;
+                    }
+                }
+                .custom-control-label{
+                    color: #e5e3ff;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                
+            }
+            .mybtn2{
+                background: none;
+                border: 0px;
+                margin-top: 20px;
+            }
+        }
+        .right-area{
+           .top-content{
+               h4{
+                   font-size: 36px;
+                   font-weight: 600;
+                   color: #fff;
+                   line-height: 46px;
+               }
+               p{
+                   font-size: 18px;
+                   line-height: 28px;
+                   color: #cac7f6;
+               }
+               a{
+                   font-size: 18px;
+                   line-height: 28px;
+                   color: #fff;
+                   i{
+                       font-size: 14px;
+                       margin-left: 5px;
+                   }
+               }
+           } 
+           .bottom-content{
+               margin-top: 60px;
+               .single-info{
+                   margin-bottom: 40px;
+                   display: flex;
+                   align-items: center;
+                   .icon{
+                        height: 80px;
+                        width: 80px;
+                        line-height: 80px;
+                        text-align: center;
+                        color: #00a2ff;
+                        font-size: 30px;
+                        box-shadow: inset 0px 0px 10px 7px #00a2ff;
+                        border-radius: 50%;
+                        margin-right: 30px;
+                   }
+                   .content{
+                       flex: 1;
+                       h4{
+                            font-size: 24px;
+                            line-height: 34px;
+                            color: #fff;
+                            font-weight: 600;
+                            margin-bottom: 0px;
+                       }
+                       p{
+                           font-size: 18px;
+                           line-height: 28px;
+                           color: #b0ade8;
+                           margin-bottom: 0px;
+                       }
+                   }
+               }
+           }
+        }
+    }
+    
+}
+/* Contact Area End */ 
+

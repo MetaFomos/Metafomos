@@ -1,0 +1,36 @@
+/* 404 Area Start */
+.four-zero-four{
+    height: 100vh;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    background: $bg-color1;
+    position: relative;
+    .bg-img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .content{
+        text-align: center;
+        img{
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+        .inner-content{
+            .title{
+                font-size: 36px;
+                line-height: 46px;
+                font-weight: 700;
+                color: #dfe3ff;
+            }
+            .mybtn1{
+                margin-top: 38px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+/* 404 Area End */

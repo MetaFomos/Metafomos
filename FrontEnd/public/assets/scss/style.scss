@@ -1,0 +1,44 @@
+
+
+
+
+// Sass Global
+@import "main/variables";
+@import "main/mixins";
+@import "main/normalize";
+@import "main/animation";
+@import "main/global";
+
+// Sass Sections
+@import "sections/_header";
+@import "sections/_footer";
+
+// Sass page
+@import "pages/_home-page";
+@import "pages/_index2";
+@import "pages/_about";
+@import "pages/_games";
+@import "pages/_play";
+@import "pages/_lottery";
+@import "pages/_raffle";
+@import "pages/_cart";
+@import "pages/_tournaments";
+@import "pages/_bonus";
+@import "pages/_awards";
+@import "pages/_how-it-work";
+@import "pages/_affiliate";
+@import "pages/_trams-condition";
+@import "pages/_contact";
+@import "pages/_fourzero";
+@import "pages/_faq";
+@import "pages/_log-sign";
+@import "pages/_profile";
+@import "pages/_reffer";
+
+
+
+
+
+
+
+

@@ -1,0 +1,345 @@
+/* Cart Area Start */
+.cart-area {
+    background: $bg-color2;
+    padding: 120px 0px 120px;
+
+    .message-one {
+        background: #242570;
+        padding: 22px 100px 28px;
+        text-align: center;
+
+        p {
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 300;
+            color: #fff;
+            margin-bottom: 0px;
+        }
+    }
+
+    .message-two {
+        display: flex;
+        justify-content: space-between;
+        background: #182455;
+        margin-top: 40px;
+        padding: 30px 30px 30px;
+
+        .left {
+            flex: 1;
+
+            p {
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: 300;
+                margin-bottom: 0px;
+                color: #f1f0f0;
+
+                i {
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .right {
+            a {
+                align-self: center;
+                margin-bottom: 0px;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                border: 1px solid #242570;
+                padding: 6px 20px;
+                display: inline-block;
+                border-radius: 50px;
+                color: #fff;
+                transition: $transition;
+
+                i {
+                    margin-right: 4px;
+                }
+
+                &:hover {
+                    background: #242570;
+                    color: #fff;
+                    border-color: #242570;
+                }
+            }
+        }
+    }
+
+    .cart-table-area {
+        .table {
+            box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.4);
+            position: relative;
+            margin-top: 80px;
+
+            thead {
+                tr {
+                    th {
+                        border-top: 1px solid rgba(255, 255, 255, 0.09);
+                        background: #101938;
+                    }
+                }
+            }
+
+            tr {
+                transition: $transition;
+
+                td,
+                th {
+                    border-top: 1px solid rgba(255, 255, 255, 0.09);
+                }
+
+                th {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    border-top: 0px;
+                    border-bottom: 0px;
+                    padding: 20px 15px;
+                    background: $bg-color2;
+                    color: #fff;
+                }
+
+                td {
+                    vertical-align: middle;
+                    padding: 30px 15px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: $body-color;
+
+                    &:nth-child(1),
+                    &:nth-child(3),
+                    &:nth-child(6) {
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        color: #fff;
+                    }
+
+                    &:nth-child(3) {
+                        color: #045cf0;
+                    }
+
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        color: #f0ad4e;
+                    }
+
+                    &:last-child {
+                        color: #f0ad4e;
+                    }
+
+                    .time {
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        margin-bottom: 0px;
+                    }
+
+                    .remove {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 12px;
+                        border-radius: 50%;
+                        background-color: rgb(19, 27, 60);
+                        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+                        color: rgba(255, 255, 255, 0.4);
+                        transition: $transition;
+                        cursor: pointer;
+                        &:hover{
+                            background: #f0ad4e;
+                            color: #fff;
+                        }
+                    }
+
+                    .qty {
+                        display: inline-block;
+                        float: left;
+                        padding: 4px 10px;
+                        border-radius: 50px;
+                        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+                    }
+
+                    .qty ul li {
+                        display: inline-block;
+                    }
+
+                    .qty ul li:first-child {
+                        margin-left: 0px;
+                    }
+
+                    .qty ul li .qttotal,
+                    .qty ul li .qtminus,
+                    .qty ul li .qtplus {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        font-weight: 500;
+                        color: #fff;
+                        transition: $transition;
+                    }
+                    .qty ul li .qtminus,
+                    .qty ul li .qtplus{
+                        &:hover{
+                            color: $base-color;
+                        }
+                    }
+                    .qty ul li .qttotal:focus,
+                    .qty ul li .qtminus:focus,
+                    .qty ul li .qtplus:focus {
+                        outline: 0px;
+                    }
+
+                    .qty ul li .qttotal {
+                        width: 30px;
+                    }
+
+                }
+
+                &:hover {
+                    background: #192246;
+                }
+            }
+        }
+    }
+    .total-pay{
+        margin-top: 60px;
+        text-align: center;
+        padding: 28px 30px 22px;
+        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.4);
+        .content{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-content: center;
+            span{
+                align-self: center;
+                align-content: center;
+                margin-right: 20px;
+            }
+            .num{
+                color: #045cf0;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Cart Area End */
+
+/* Payment-method Area Start */
+
+.payment-method{
+    background: $bg-color1;
+    padding: 110px 0px 0px;
+   .title{
+       font-size: 28px;
+       line-height: 38px;
+       font-weight: 700;
+       text-transform: uppercase;;
+       color: #fff;
+
+   } 
+   .text{
+       font-size: 24px;
+       line-height: 34px;
+       font-weight: 300;
+       margin-bottom: 0px;
+   }
+   .method-slider{
+       margin-top: 60px;
+       padding: 0px 60px;
+       .item{
+           .single-method{
+               align-items: center;
+               border: 1px solid rgba(#045cf0, 0.3);
+               text-align: center;
+               display: block;
+               height: 80px;
+               width: 95px;
+               padding-top: 14px;
+               border-radius: 10px;
+               transition: $transition;
+               &.active{
+                border-color: $base-color;
+               }
+              .icon{
+                  max-height: 35px;
+                img{
+                    width: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+              }
+            span{
+                font-size: 12px;
+                margin-bottom: 0px;
+                line-height: 22px;
+                color: #ceceff;
+
+            } 
+            &:hover,
+            &.active
+            {
+                border-color: $base-color;
+            }
+           }
+       }
+       
+        .owl-controls{
+          .owl-nav{
+              .owl-prev,
+              .owl-next
+              {
+                  font-size: 18px;
+                  position: absolute;
+                  text-align: center;
+                  line-height: 40px;
+                  width: 40px;
+                  height: 40px;
+                  background: #2b304e;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  color: rgba(0, 0, 0, 0.50);
+                  transition: $transition;
+                  color: rgba(255, 255, 255, 0.62);
+                  border-radius: 50%;
+                  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+                  &:hover{
+                      background: $base-color;
+                      color: #fff;
+                  }
+              }
+              .owl-prev{
+                  left: 0px;
+              }
+              .owl-next{
+                  right: 0px;
+                }
+            }
+        }
+   }
+   .mybtn1{
+       margin-top: 60px;
+   }
+}
+
+
+
+
+
+/* Payment-method Area End */

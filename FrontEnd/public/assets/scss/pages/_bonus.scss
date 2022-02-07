@@ -1,0 +1,98 @@
+
+/* Bonuse Section  Start */
+.bonuse-section{
+    background-image: url(../images/bg-s3.png);
+    background-repeat: repeat;
+    padding-bottom: 90px;
+    .header-area{
+        background-color: #1f0644;
+        padding-top: 76px;
+        margin-top: -280px;
+        border-radius: 6px;
+        padding-bottom: 70px;
+        background-image: url(../images/bg-s3.png);
+        background-repeat: repeat;
+        h1{
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .mybtn2{
+           font-size: 20px;
+           text-transform: capitalize; 
+           margin-top: 25px;
+        }
+    }
+}
+.single-bonus{
+    border: 1px solid #483669;
+    border-radius: 10px;
+    padding: 20px 30px 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    img{
+        height: 150px;
+    }
+    h4{
+        font-size: 18px;
+        line-height: 28px;
+        color: #cdd0f0;
+        font-weight: 400;
+    }
+    a{
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #cdd0f0;
+        display: inline-block;
+        border: 1px solid #483669;
+        border-radius: 50px;
+        padding: 3px 25px;
+        i{
+            font-size: 14px;
+            margin-right: 3px;
+        }
+    }
+}
+
+/* Bonuse Section  End */
+
+
+/* How to Get Bonuse Section  Start */
+.how-get-bonuse-section{
+    padding: 110px 0px 90px;
+    .section-heading{
+        text-align: center;
+        .title{
+            font-size: 60px;
+            line-height: 70px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .text{
+            font-size: 18px;
+            line-height: 28px;
+            color: #cdd0f0;
+        }
+    }
+}
+.h-bonus{
+    text-align: center;
+    margin-bottom: 30px;
+    img{
+        height: 120px;
+    }
+    h6{
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+        a{
+            display: inline-block;
+            color: #00a2ff;
+        }
+    }
+}
+/* How to Get Bonuse Section  End */

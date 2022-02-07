@@ -1,0 +1,202 @@
+
+/* Play Games Area Start */
+
+.play-games{
+    background: url(../images/play/playgame-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .gaming-activities{
+        margin-top: -120px;
+        .gaming-activities-inner{
+            .single-activities{
+                background: #252f5a;
+                padding: 0px 30px 20px;
+                .top-area{
+                    display: flex;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    margin-bottom: 21px;
+                    padding-bottom: 10px;
+                
+                    .left{
+                        .icon{
+                            position: relative;
+                            top: -20px;
+                            text-align: center;
+                            margin-right: 30px;
+                            img{
+                                display: block;
+                                width: 70px;
+                                height: 70px;
+                            }
+                            span{
+                                font-size: 14px;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                display: inline-block;
+                                padding: 0px 10px;
+                                border-radius: 5px;
+                                top: -10px;
+                                position: relative;
+                                background: #252f5a;
+                                color: #fff;
+                                i{
+                                    font-size: 12px;
+                                    color: #ffbf00;
+                                    margin-left: 2px;
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        flex: 1;
+                        .title{
+                            margin-top: 22px;
+                            font-size: 24px;
+                            line-height: 34px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            margin-bottom: 4px;
+                        }
+                        .text{
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: $base-color;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+                .bottom-area{
+                    .title{
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-bottom: 4px;
+                    }
+                    .players-count{
+                        display: inline-block;
+                        .players-list{
+                            display: inline-block;
+                            margin-left: 12px;
+                            padding-top: 5px;
+                            li{
+                                display: inline-block;
+                                border: 2px solid #252f5a;
+                                margin-left: -12px;
+                                width: 30px;
+                                height: 30px;
+                                overflow: hidden;
+                                border-radius: 50%;
+                                text-align: center;
+                                img{                                
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        .count-num{
+                            display: inline-block;
+                            font-size: 10px;
+                            width: 25px;
+                            height: 25px;
+                            background: #252f5a;
+                            border: 1px solid rgba(255, 255, 255, 0.1);
+                            border-radius: 50%;
+                            line-height: 25px;
+                            text-align: center;
+                            margin-left: -12px;
+                            position: relative;
+                            top: -9px;
+                        }
+                    }
+                    .pp{    
+                        display: inline-block;
+                        text-align: right;
+                        margin-left: 15px;
+                        position: relative;
+                        top: 10px;
+                        float: right;
+                        p{
+                            margin-bottom: 0px;
+                            color: #cfcffd;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .all-games{
+        padding: 119px 0px 120px;
+        .single-game{
+            margin-bottom: 54px;
+        }
+        .mybtn1{
+            display: inline-block;
+            margin-top: 30px;
+        }
+        .nav{
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 63px;
+            li{
+                display: inline-block;
+                a{
+                    width: 150px;
+                    height: 150px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: rgb(39, 59, 113);
+                    border-radius: 50%;
+                    margin: 0px 10px;
+                    text-align: center;
+                    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+                    .icon{
+                        margin-top: 20px;
+                        display: inline-block;
+                        img{
+                            height: 60px;
+                        }
+                        .one{
+                            display: block;
+                        }
+                        .two{
+                            display: none;
+                        }
+                    }
+                    span{
+                        display: block;
+                        font-size: 14px;
+                        line-height: 24px;
+                        text-transform: uppercase;
+    
+                        text-shadow: 0px 0px 3px #2eb7eb, 0px 0px 7px #2eb7eb;
+                        color: #2eb7eb;
+
+                      
+                    }
+                    &.active{
+                        border-color: $base-color!important;
+                        .icon{
+                            .one{
+                                display: none;
+                            }
+                            .two{
+                                display: block;
+                            }
+                        }
+                        span{
+                            text-shadow: 0px 0px 3px rgb(217, 41, 62), 0px 0px 7px rgb(217, 41, 62);
+                            color: rgb(217, 41, 62);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Play Games Area End */ 
+

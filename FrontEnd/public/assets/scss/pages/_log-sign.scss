@@ -1,0 +1,150 @@
+/* login modal Area Start */
+.login-modal{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 10px;
+            background: rgba(93, 33, 212, 0.8) ;
+            border: 0px;
+            position: relative;
+            .close{
+                position: absolute;
+                top: 4px;
+                right: 10px;
+                color: #fff;
+            }
+            .modal-body{
+                padding: 20px 0px 10px;
+                border-radius: 0px;
+                border: 0px;
+                .l-nav{
+                   text-align: center;
+                   display: block;
+                   margin-bottom: 30px;
+                   li{
+                       display: inline-block;
+                       a{
+                           padding: 10px 25px;
+                           margin: 0px 10px;
+                           font-size: 15px;
+                           box-shadow: inset 0px 0px 6px 4px #00a2ff;
+                           &:hover,
+                           &.active
+                           {
+                            box-shadow: inset 0px 0px 6px 4px #fea036;
+                           }
+                       }
+                   } 
+                }
+                .logo-area{
+                    display: block;
+                    text-align: center;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 135px;
+                        height: 135px;
+                        border-radius: 50%;
+                        background: #252f5a;
+                        top: -65px;
+                        left: 050%;
+                        transform: translateX(-50%);
+                    }
+                    img{
+                        display: inline-block;
+                        max-width: 100px;
+                        position: relative;
+                        z-index: 9;
+                        top: -4px;
+                    }
+                }
+                .header-area{
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 35px;
+                    padding: 0px 50px;
+                    .bunnus_btn{
+                        border: 1px solid  rgb(242, 134, 9);
+                        background-image: -moz-linear-gradient( 45deg, rgb(245,70,70) 0%, rgb(245,61,161) 100%);
+                        background-image: -webkit-linear-gradient( 45deg, rgb(245,70,70) 0%, rgb(245,61,161) 100%);
+                        background-image: linear-gradient( 45deg, rgb(245,70,70) 0%, rgb(245,61,161) 100%);
+                        padding: 5px 30px 0px;
+                        border-radius: 50px;
+                        display: block;
+                        margin-bottom: 30px;
+                        box-shadow: inset 0px 0px 15px 5px #00a2ff;
+                        h4{
+                            color: #fff;
+                            font-size: 36px;
+                            line-height: 46px;
+                            font-weight: 700;
+                            margin-bottom: 0px;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                          
+                    }
+                    .title{
+                        font-size: 36px;
+                        line-height: 46px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-bottom: 2px;
+                        text-transform: uppercase;
+                    }
+                    .text{
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: #e5e1ff;
+                    }
+                }
+                .form-area{
+                    .form-group{
+                        margin-bottom: 10px;
+                        span {
+                            color: #e2ebff;
+                            font-size: 16px;
+                            a{
+                                color: #fa009f;
+                            }
+                        }
+                        .check-group{
+                            input{
+                                display: inline-block;
+                            }
+                            label {
+                                color: #e2ebff;
+                                font-size: 16px;
+                                a{
+                                    color: #fa009f;
+                                }
+                            }
+                        }
+                    }
+                    .input-field{
+                        width: 100%;
+                        border: 0px;
+                        height: 60px;
+                        padding: 0px 30px;
+                        border-radius: 50px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: none;
+                        border: 1px solid #00a2ff;
+                        @include placeholder-color(#e2ebff);
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                    }
+                    .mybtn2{
+                        display: block;
+                        border: 0px;
+                        background: none;
+                        margin: 20px auto 0;
+                    }
+                }
+            }
+        }
+    }
+}

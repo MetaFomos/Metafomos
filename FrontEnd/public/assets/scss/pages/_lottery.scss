@@ -1,0 +1,319 @@
+/* Lottery Staticstics Area Start */
+
+.lottery-area{
+    background: $bg-color2;
+    padding-bottom: 120px;
+    .lottery-staticstics{
+        margin-top: -55px;
+        .single-staticstics{
+            padding: 30px 30px 30px;
+            border-radius: 10px;
+            background-color: rgba(29, 40, 80, 0.302);
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+            display: flex;
+            transition: $transition;
+            .left{
+                margin-right: 30px;
+                width: 80px;
+                height: 80px;
+                line-height: 70px;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: #0b122e;
+            }
+            .right{
+                flex: 1;
+                .title{
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: 26px;
+                }
+                .count{
+                    img{
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 24px;
+                        line-height: 34px;
+                        font-weight: 600;
+                        color: #f6a623;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+            }
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+    } 
+    .daily-lottery{
+        padding: 113px 0px 120px;
+        .section-heading{
+            margin-bottom: 57px;
+        }
+        .draw-time{
+            background: url(../images/draw-time-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 53px 0px 53px;
+            text-align: center;
+            .subtitle {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+                @include gradient-text();
+            }
+            .text {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 300;
+                margin-top: 9px;
+                margin-bottom: 0px;
+                text-transform: uppercase;
+            }
+            .draw-counter{
+                margin-top: 7px;
+                border-radius: 3px;
+                display: inline-block;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 70px;
+                span{
+                    display: inline-block;
+                    font-weight: 700;
+                    font-size: 60px;
+                    line-height: 70px;
+                    color: #fff;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }   
+    .buy-tickets{
+        .buy-tickets-box{
+            background: #070b28;
+            .heading{
+                padding: 15px 40px 10px;
+                display: flex;
+                justify-content: space-between;
+                background: #101b3a;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .content{
+                padding: 40px 40px 40px;
+                .info-box{
+                    padding: 21px 30px 20px;
+                    background: #0e1833;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    .title{
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-bottom: 8px;
+                    }
+                    .number{
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #f6a623;
+                        font-weight: 600;
+                        i{
+                            margin-right: 5px;
+                        }
+                        input{
+                            height: 25px;
+                            border-radius: 50px;
+                            border: 0px;
+                            color: #f6a623;
+                            background: #16203a;
+                            padding: 0px 20px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .game-numbers{
+                    padding-top: 30px;
+                    .title{
+                        font-size: 18px;
+                    }
+                    .number-box{
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                       .auto-number{
+                           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                           padding: 33px 30px 30px;
+                           .top-content{
+                               position: relative;
+                               input{
+                                   position: absolute;
+                                   top: 50%;
+                                   transform: translateY(-50%);
+                               }
+                                label{
+                                    padding-left: 30px;
+                                   span{
+                                       display: block;
+                                   }
+                               }
+                           }
+                       }
+                       .manual-number{
+                           padding: 33px 30px 37px;
+                           .top-content{
+                               position: relative;
+                               input{
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                                label{
+                                    padding-left: 30px;
+                                   span{
+                                       display: block;
+                                   }
+                               }
+                           }
+                           .main-content{
+                            margin-top: 26px;
+                           }
+                       }
+                    }
+                }
+                .mybtn1{
+                    margin-top: 60px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+.number-list{
+    margin: 0 -3px;
+    li {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        display: inline-block;
+        margin: 3px;
+        font-weight: 600;
+        color: $base-color;
+        border-radius: 50%;
+        background-image: -moz-linear-gradient( 26deg, rgb(11,18,46) 9%, rgb(33,38,67) 39%, rgb(54,58,88) 100%);
+        background-image: -webkit-linear-gradient( 26deg, rgb(11,18,46) 9%, rgb(33,38,67) 39%, rgb(54,58,88) 100%);
+        background-image: -ms-linear-gradient( 26deg, rgb(11,18,46) 9%, rgb(33,38,67) 39%, rgb(54,58,88) 100%);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+
+        &.active{ background-image: -moz-linear-gradient( 26deg, rgb(56,47,33) 9%, rgb(139,100,42) 39%, rgb(222,153,50) 100%);
+            background-image: -webkit-linear-gradient( 26deg, rgb(56,47,33) 9%, rgb(139,100,42) 39%, rgb(222,153,50) 100%);
+            background-image: -ms-linear-gradient( 26deg, rgb(56,47,33) 9%, rgb(139,100,42) 39%, rgb(222,153,50) 100%);
+            color: #ffffff;
+        }
+    }
+ }
+
+/* Lottery Staticstics Area End */
+
+/*  How it Work Area Start  */
+
+.how-it-work{
+    padding: 97px 0px 496px;
+    position: relative;
+    .bg-shape{
+        position: absolute;
+        top: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section-heading{
+        margin-bottom: 59px;
+    }
+    .single-work{
+        text-align: center;
+        img{
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+       .title{
+        font-size: 28px;
+        line-height: 38px;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 5px;
+       } 
+       p{
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 300;
+           margin-bottom: 0px;
+           display: inline-block;
+           margin-top: 9px;
+       }
+    }
+}
+
+/* How it Work Area End*/
+
+
+/* lottery video Area Start */
+
+.lottery-video{
+    background: $bg-color2;
+    padding: 0px 0px 70px;
+    margin-top: -245px;
+    .video-box{
+        background: url(../images/lottery-video.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 495px;
+        position: relative;
+        margin-top: -245px;
+        .video-icon{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+/* lottery video Area END */
+
+
+/* Questions Area Start */
+
+.question-area{
+    background-color: $bg-color2;
+    //background-image: url(../images/question-bg.jpg.png);
+    //background-repeat: no-repeat;
+   // background-position: center;
+   // background-size: cover;
+    padding: 50px 0px 120px;
+    .section-heading{
+        text-align: left;
+        .title{
+            margin-bottom: 30px;
+        }
+        .mybtn1{
+            margin-top: 22px;
+        }
+    }
+}
+
+
+
+
+/* Questions Area End */

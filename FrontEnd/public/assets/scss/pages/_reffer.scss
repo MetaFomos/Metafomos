@@ -1,0 +1,126 @@
+
+/* Reffer Section  Start */
+.reffer-top-section{
+    padding: 40px 0px 40px;
+    background: url(../images/counter-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 15px 15px -10px #00a2ff, inset 0px -15px 15px -10px #00a2ff;
+    .r-s-info{
+        text-align: center;
+        h4{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 46px;
+            text-shadow: 0px 0px 20px #00a2ff;
+            color: #00a2ff;
+            margin-bottom: 0px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+        }
+    }
+    .button-area{
+        display: block;
+        text-align: right;
+        .mybtn2{
+            font-size: 20px;
+            text-transform: capitalize;
+            padding: 22px 40px;
+        }
+    }
+}
+.our-advantage{
+    padding: 120px 0px 120px;
+    .single-bonus{
+        h4{
+            margin-bottom: 0px;
+        }
+    }
+}
+.commission-section{
+    background: url(../images/commissionbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0px 120px;
+    .progress-bar-wrapper{
+        height: 80px;
+        box-shadow: inset 0px 0px 10px 7px #00a2ff, 0px 0px 15px 0px #00a2ff;
+        border-radius: 50px;
+        padding: 15px;
+        position: relative;
+        background: #270854;
+        margin-bottom: 25px;
+        .persentage{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 50px;
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            font-weight: 600;
+        }
+        .progress-bar{
+            background-color: rgb(33, 67, 213);  
+            box-shadow: inset 0px 0px 10px 7px #00a2ff;
+            height: 100%;
+            border-radius: 50px;
+            display: flow-root;
+            line-height: 50px;
+            font-size: 20px;
+            color: #fff;
+            text-align: left;
+            padding-left: 20px;
+            i{
+                display: inline-block;
+            }
+            span{
+                display: inline-block;
+            }
+            &.one{
+                width: 25%;
+            }
+            &.two{
+                width: 50%;
+            }
+            &.three{
+                width: 60%;
+            }
+            &.four{
+                width: 70%;
+            }
+            &.five{
+                width: 85%;
+            }
+        }
+    }
+    .bottom-area{
+        text-align: center;
+        padding-top: 40px;
+        h3{
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .mybtn2{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+/* Reffer Section  End */

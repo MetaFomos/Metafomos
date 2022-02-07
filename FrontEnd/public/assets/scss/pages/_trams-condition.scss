@@ -1,0 +1,276 @@
+/* Serch Area Start */ 
+
+  
+.serch-area{
+    background: $bg-color2;
+    .serch-box{
+        padding: 40px 50px 40px;
+        position: relative;
+        top: -56px;
+        border-radius: 70px;
+        background-color: rgb(28, 41, 78);
+        box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.3);
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                &.input-field{
+                    flex: 1;
+                    input{
+                        width: 100%;
+                        border: 0px;
+                        height: 50px;
+                        color: $body-color;
+                        background: none;
+                        border-bottom: 1px solid rgba(rgb(255, 255, 255), 0.2);
+                        @include placeholder-color($body-color);
+                    }
+                }
+                &.button{
+                    width: 190px;
+                    margin-left: 30px;
+                    .mybtn1{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    
+/* Serch Area End */  
+
+
+
+
+/* Help Section Area Start */  
+
+.help-section{
+    padding: 65px 0px 120px;
+    background: $bg-color2;
+    .help-box{
+        padding: 45px 60px 60px;
+        border-radius: 7px;
+        background: $bg-color1;
+        .help-box-inner{
+            .title{
+                font-size: 50px;
+                line-height: 60px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 29px;
+                text-transform: uppercase;
+            }
+            .content{
+                flex: 1;
+                .writer-profile{
+                    display: flex;
+                    img{
+                        margin-right: 30px;
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                    }
+                    .writer-content{
+                        flex: 1;
+                        align-self: center;
+                        .w-name{
+                            margin-bottom: 0px;
+                            font-size: 18px;
+                            line-height: 28px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #fff;
+                            a{
+                                color: #31b3f6;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 26px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: none;
+            }
+        }
+        .help-box-inner2-hearer{
+            margin-top: 72px;
+            .title{
+                font-size: 28px;
+                line-height: 38px;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 0px;
+            }
+        }
+        .help-box-inner2{
+            margin-top: 36px;
+            background: $bg-color2;
+            .single-artical{
+                padding: 22px 30px 30px;
+                transition: $transition;
+                border-bottom: 1px solid #18234c;
+                &:first-child{
+                    border-top: 1px solid #18234c;
+                }
+                .content{
+                    .title{
+                        font-size: 28px;
+                        line-height: 38px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-bottom: 21px;
+                    }
+                }
+                .writer-profile{
+                    margin-top: 15px;
+                    display: flex;
+                    img{
+                        margin-right: 30px;
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                    }
+                    .writer-content{
+                        flex: 1;
+                        align-self: center;
+                        .w-name{
+                            margin-bottom: 0px;
+                            font-size: 18px;
+                            line-height: 28px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #fff;
+                            a{
+                                color: #31b3f6;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 26px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .help-box-inner3-hearer{
+            margin-top: 72px;
+            .title{
+                font-size: 28px;
+                line-height: 38px;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.help-section.writter-artical-details{
+    .help-box{
+        padding: 0px 60px 12px!important;
+        .help-box-inner2{
+            padding-top: 26px;
+            background: none;
+            border: none;
+            .single-artical{
+                border: 0px;
+                padding: 0px;
+                margin-bottom: 24px;
+                background: none;
+                border: none;
+                .top-title{
+                    font-size: 50px;
+                line-height: 60px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 29px;
+                text-transform: uppercase;
+                }
+                .writer-profile{
+                    margin-top: 15px;
+                    display: flex;
+                    img{
+                        margin-right: 30px;
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                    }
+                    .writer-content{
+                        flex: 1;
+                        align-self: center;
+                        .w-name{
+                            margin-bottom: 0px;
+                            font-size: 28px;
+                            line-height: 38px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #fff;
+                            a{
+                                color: #31b3f6;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 26px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+                .inner-content{
+                    margin-top: 70px;
+                    .title{
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #31b3f6;
+                        margin-bottom: 12px;
+                        margin-top: 36px;
+                    }
+                }
+                .footer-content{
+                    border-top: 1px solid rgba(rgb(255, 255, 255), 0.20);
+                    margin-top: 46px;
+                    padding-top: 32px;
+                    text-align: center;
+                    .heading{
+                        font-size: 22px;
+                        line-height: 32px;
+                        font-weight: 600;
+                        color: #9da1b9;
+                        margin-bottom: 6px;
+                    }
+                    .emojis{
+                        display: inline-block;
+                        margin-top: 15px;
+                        margin-bottom: 0px;
+                        li{
+                            display: inline-block;
+                            margin-bottom: 0px;
+                            a{
+                                font-size: 32px;
+                                line-height: 42px;
+                                color: #e7b401;
+                                margin: 0px 7px;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+// &:hover
+//     box-shadow: 0px 7px 25px rgba(#000, 0.10)
+
+
+
+/* Help Section Area End */ 

@@ -1,0 +1,102 @@
+
+@keyframes opacityAnimation{
+   0%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.4;
+    }
+}
+
+@keyframes upDownAnimation{
+   0%{
+       margin-top: 0px;
+    }
+    50%{
+        margin-top: 80px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+// Heor Area Animation Start
+@keyframes phoneAni{
+   0%{
+       margin: 0px;
+    }
+    33%{
+        margin-left: 5px;
+    }
+    66%{
+        margin-left: -5px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+@keyframes manAni{
+   0%{
+       margin: 0px;
+    }
+    33%{
+        margin-top: 5px;
+    }
+    66%{
+        margin-top: -5px;
+    }
+    100%{
+        margin: 0px;
+    }
+}
+
+@keyframes shieldAni{
+   0%{
+       margin: 0px;
+    }
+    33%{
+        margin-top: 5px;
+    }
+    66%{
+        margin-top: -5px;
+    }
+    100%{
+        margin: 0px;
+    }
+}
+
+@keyframes rippleAni{
+   0%{
+    transform: translate(0px, 0px);
+    }
+    33%{
+        
+        transform: translate(5px, -5px);
+    }
+    66%{
+        transform: translate(-5px, 5px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes ripple2Ani{
+   0%{
+    transform: translate(0px, 0px);
+    }
+    33%{
+        
+        transform: translate(-5px, -5px);
+    }
+    66%{
+        transform: translate(5px, 5px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+// Heor Area Animation Start

@@ -1,0 +1,71 @@
+/*	Index 2 Css Start */
+
+.index2{
+    .header .mainmenu-area{
+        background: none;
+    }
+    .header .mainmenu-area .navbar::before,
+    .header .mainmenu-area .navbar::after
+    {
+        display: none;
+    }
+    .header .mainmenu-area .navbar .navbar-brand {
+        padding-left: 0px;
+    }
+    .header .mainmenu-area .navbar #main_menu .navbar-nav .nav-item .nav-link .mr-hover-effect{
+        display: none;
+    }
+    .hero-area{
+        background: url(../images/herobg2.jpg);
+        padding: 372px 0px 424px;
+    }
+    .hero-area .left-content .content{
+        text-align: center;
+    }
+    .features{
+        background: $bg-color1;
+        padding: 277px 0px 90px;
+    }
+    .features .section-heading{
+       margin-bottom: 58px;
+    }
+    .features .feature-box .feature-box-inner {
+        position: unset; 
+        width: 100%; 
+        top: auto; 
+    }
+
+    .featured-game {
+        padding: 110px 0px 120px;
+    }
+}
+
+.single-feature.landscape{
+    display: flex;
+    border: 1px solid rgb(39, 59, 113);
+    border-radius: 10px;
+    padding: 45px 30px 45px 45px;
+    background: none;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+    transition: $transition;
+    margin-bottom: 30px;
+    .icon{
+        margin-right: 45px;
+        margin-bottom: 0px;
+        background: #242e5a;
+    }
+    .content{
+        flex: 1;
+        text-align: left;
+        align-self: center;
+    }
+}
+
+/*	Index 2 Css End */
+
+
+
+/* About Area Start */
+
+/*	About Area  End */
+

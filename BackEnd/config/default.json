@@ -1,0 +1,7 @@
+{
+    "LocalmongoURI": "mongodb://localhost:27017/metafomosDB",
+    "mongoURI": "mongodb+srv://Gabe:r!!_pvA.AkM6p4Q@cluster0.urnaa.mongodb.net/scan-booth?retryWrites=true&w=majority",
+    "jwtSecret": "secret",
+    "verifySenderEmailName": "superdev0109@outlook.com",
+    "verifySenderEmailPassword": "password!@#!@#"
+}

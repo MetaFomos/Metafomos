@@ -1,0 +1,47 @@
+
+// Custom Overlay 
+@mixin overlay-dark($opacity: .7){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: $opacity;
+}
+
+// Gradint Color
+@mixin gradint($diraction: left){
+    background: -webkit-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: -moz-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: -ms-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: -o-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+}
+
+// Gradint text
+@mixin gradient-text($diraction: left){
+    background: -webkit-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: -moz-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: -ms-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: -o-linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    background: linear-gradient(to $diraction,  rgb(255,52,77), rgb(210,39,60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+// Input placeholder color Change
+@mixin placeholder-color($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder{ 
+        color: $color;
+    }
+}
+
