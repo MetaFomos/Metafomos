@@ -23,10 +23,6 @@ const Dashboard = () => {
           behavior: 'smooth'
       }, 500)
     }, []);
-
-   if (!isAuthenticated) {
-      navigate("/login");
-   }
    
 
    return (
@@ -39,7 +35,7 @@ const Dashboard = () => {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="content">
-                        <div className="content">
+                        <div className="content"  style={{marginTop: "100px"}}>
                            <h5 className="subtitle" style={{ marginBottom: '1px' }}>
                               SHARE | INVITE | EARN
                            </h5>

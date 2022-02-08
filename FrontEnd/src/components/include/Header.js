@@ -134,9 +134,9 @@ const Header = () => {
                   <div className="row">
                      <div className="col-lg-12">                 
                         <nav className="navbar navbar-expand-lg navbar-light">
-                           <Link to="/" className="navbar-brand d-lg-none">
-                              <img className="l2" src="../assets/images/logo2.png" alt="" />
-                           </Link>
+                           <a href="/" className="navbar-brand d-lg-none">
+                              <img className="l2" src="../assets/images/logo2.png" alt="" width={"120%"} />
+                           </a>
                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu"
                               aria-expanded="false" aria-label="Toggle navigation">
                               <span className="navbar-toggler-icon"></span>
@@ -144,48 +144,32 @@ const Header = () => {
                            <div className="collapse navbar-collapse fixed-height" id="main_menu">
                               <div className="main-menu-inner">
                                  <ul className="navbar-nav mr-auto">
-                                    <li className="nav-item dropdown">
-                                       <a className="nav-link active dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true"
-                                          aria-expanded="false">
-                                          Home
-                                       </a>
-                                       <ul className="dropdown-menu" >
-                                          <li><a className="dropdown-item" href="#"> <i className="fa fa-angle-double-right"></i>Home 1</a></li>
-                                          <li><a className="dropdown-item" href="#"> <i className="fa fa-angle-double-right"></i> Home 2</a></li>
-                                          <li><a className="dropdown-item" href="#"> <i className="fa fa-angle-double-right"></i> Home 3</a></li>
-                                          <li><a className="dropdown-item" href="#"> <i className="fa fa-angle-double-right"></i> Home 4</a></li>
-                                          <li><a className="dropdown-item" href="#"> <i className="fa fa-angle-double-right"></i> Home 5</a></li>
-                                       </ul>
+                                    <li className="nav-item">
+                                       <Link className="nav-link" to="/">WHO WE ARE</Link>
                                     </li>
                                     <li className="nav-item">
-                                       <a className="nav-link" href="#">Raffles</a>
-                                    </li>
-                                    <li className="nav-item">
-                                       <a className="nav-link" href="#">Games</a>
-                                    </li>
-                                    <li className="nav-item">
-                                       <a className="nav-link" href="#">Tournaments</a>
+                                       {isAuthenticated ? (<></>) : (<Link className="nav-link" to="/register">SIGN UP</Link>)}
                                     </li>
                                     
                                  </ul>
-                                 <Link className="navbar-brand  d-none d-lg-block" to="/">
+                                 <a className="navbar-brand  d-none d-lg-block" href="/">
                                     <img className="l2" src="../assets/images/logo2.png" alt="" />
-                                 </Link>
+                                 </a>
                                  <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">
-                                       <a className="nav-link" href="#">Contact</a>
+                                       {isAuthenticated ? (<></>) : (<Link className="nav-link" to="/login">LOGIN</Link>)}
                                     </li>
                                     {/* <li>
                                        <a href="#" className="mybtn1"  data-toggle="modal" data-target="#signin"> Join us</a>
                                     </li>  */}
                                     <li style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                                       <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '200px' }}> 
+                                       <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '270px'}}> 
                                           <i className='fas fa-wallet' /> &nbsp;&nbsp;
                                           {blockchain.loading
                                              ? 'Connecting...'
                                              : blockchain.account
                                              ? blockchain.account.slice(0, 5) + '...' + blockchain.account.slice(-4) 
-                                             : 'Connect'
+                                             : 'CONNECT'
                                           }
                                        </span>
                                     </li>
@@ -196,7 +180,7 @@ const Header = () => {
                                                 { isAuthenticated ? (
                                                    <img src="../assets/images/menu-user.png" alt="" />
                                                 ) : (
-                                                   <img src="../assets/custom/images/user.png" width="44px" height="44px" style={{ borderRadius: '50%' }} alt="" />
+                                                   <></>
                                                 ) }
                                                 
                                              </div>
@@ -217,9 +201,9 @@ const Header = () => {
                                                    { isAuthenticated ? (
                                                       <div>
                                                          <li>
-                                                            <a href="#">
+                                                            <Link to="/profile/overview">
                                                                <i className="far fa-user-circle"></i>My Account
-                                                            </a>
+                                                            </Link>
                                                          </li>
                                                          <li>
                                                             <a href="#" onClick={() => onLogOut()}>
