@@ -1002,13 +1002,13 @@ select:focus {
 }
 .header .mainmenu-area.mainmenu-area2 .navbar #main_menu .navbar-brand {
   position: relative;
-  width: 250px;
+  width: 20%;
   height: 100%;
 }
 .header .mainmenu-area.mainmenu-area2 .navbar #main_menu .navbar-brand img.l2 {
   height: 140px;
-  width: 250px;
-  max-width: 250px;
+  width: 340px;
+  max-width: 340px;
   position: absolute;
   bottom: -42px;
 }
@@ -1293,9 +1293,10 @@ select:focus {
 }
 .hero-area.hero-area2.hero-area4 {
   background: url(../images/home/h4.jpg);
-  background-size: inherit;
+  background-size: 100%;
   /* background-position: center; */
   background-repeat: no-repeat;
+  background-position-y: -3%;
   position: relative;
 }
 .hero-area.hero-area2.hero-area4 .content {
@@ -1916,7 +1917,7 @@ select:focus {
 /* join us area end */
 /* How play area Start */
 .how-to-play {
-  padding: 120px 0px 0px;
+  padding: 0px 0px 0px !important;
   background: #1f0644;
   position: relative;
 }

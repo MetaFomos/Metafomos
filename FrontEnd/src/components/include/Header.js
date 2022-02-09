@@ -144,11 +144,18 @@ const Header = () => {
                            <div className="collapse navbar-collapse fixed-height" id="main_menu">
                               <div className="main-menu-inner">
                                  <ul className="navbar-nav mr-auto">
-                                    <li className="nav-item">
-                                       <Link className="nav-link" to="/">WHO WE ARE</Link>
+                                    {/* <li style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                                       <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '270px'}}> 
+                                          {isAuthenticated ? (<></>) : (<Link className="nav-link" to="/register">JOIN US NOW</Link>)}
+                                       </span>
+                                    </li> */}
+                                    <li style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                                       <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '220px'}}> 
+                                             {isAuthenticated ? (<></>) : (<Link className="" to="/register">JOIN US NOW</Link>)}
+                                       </span>
                                     </li>
                                     <li className="nav-item">
-                                       {isAuthenticated ? (<></>) : (<Link className="nav-link" to="/register">SIGN UP</Link>)}
+                                       <Link className="nav-link" to="/">WHO WE ARE</Link>
                                     </li>
                                     
                                  </ul>
@@ -163,7 +170,7 @@ const Header = () => {
                                        <a href="#" className="mybtn1"  data-toggle="modal" data-target="#signin"> Join us</a>
                                     </li>  */}
                                     <li style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                                       <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '270px'}}> 
+                                       <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '220px'}}> 
                                           <i className='fas fa-wallet' /> &nbsp;&nbsp;
                                           {blockchain.loading
                                              ? 'Connecting...'

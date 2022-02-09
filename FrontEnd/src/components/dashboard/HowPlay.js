@@ -13,7 +13,7 @@ const HowPlay = () => {
                               More Smartly
                            </h5>
                            <h2 className="title ">
-                              How to play
+                              How to start
                            </h2>
                            <h6 className="text">
                               To enter our portal you need to get Visitor Pass NFT

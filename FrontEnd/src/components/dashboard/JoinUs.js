@@ -13,14 +13,13 @@ const JoinUs = () => {
                   <div className="col-xl-7">
                      <div className="section-heading content-left">
                         <h5 className="subtitle">
-                           Every day lots of wins
+                           Daily Earning Opportunities
                         </h5>
                         <h2 className="title ">
-                           Be One of Them
+                           Be One of Us
                         </h2>
                         <h6 className="text">
-                           Get started in less than 5 min - no credit card required.Gain 
-         early access to Jugaro and experience crypto like never before.
+                           Get started in less than 5 minutes - no credit card required. Gain early access to MetaFomos portal and earn NFTs and Tokens today!
                         </h6>
                         <Link to="/login">
                            <span className="mybtn1" style={{ marginTop: '85px' }}> 
