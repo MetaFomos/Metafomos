@@ -151,7 +151,7 @@ const Header = () => {
                                     </li> */}
                                     <li style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                                        <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '220px'}}> 
-                                             {isAuthenticated ? (<></>) : (<Link className="" to="/register">JOIN US NOW</Link>)}
+                                             {isAuthenticated ? (<></>) : (<Link className="" to="/register">Sign Up</Link>)}
                                        </span>
                                     </li>
                                     <li className="nav-item">
@@ -159,7 +159,7 @@ const Header = () => {
                                     </li>
                                     
                                  </ul>
-                                 <a className="navbar-brand  d-none d-lg-block" href="/">
+                                 <a className="navbar-brand" href="/" style={{display: "flex", justifyContent: "center"}}>
                                     <img className="l2" src="../assets/images/logo2.png" alt="" />
                                  </a>
                                  <ul className="navbar-nav ml-auto">
