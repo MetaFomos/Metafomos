@@ -83,7 +83,7 @@ const Register = () => {
             <ToastContainer />
             <div style={{ height: '230px' }}></div>
             <div className='create_game'>
-                <img src='assets/custom/images/girl.png' width="330px" />
+                <img src='assets/custom/images/girl.png' width="330px" height="752px" />
                 <div className='right'>
                     <div className='panel1'>
                     <span>Sign Up</span>

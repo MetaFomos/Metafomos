@@ -8,6 +8,7 @@ import LatestActivity from './LatestActivity';
 import ExLottery from './ExLottery';
 import RecentWinner from './RecentWinner';
 import JoinUs from './JoinUs';
+import Footer from '../include/Footer';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -35,7 +36,7 @@ const Dashboard = () => {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="content">
-                        <div className="content"  style={{marginTop: "100px"}}>
+                        <div className="content">
                            <h5 className="subtitle" style={{ marginBottom: '1px' }}>
                               SHARE | INVITE | EARN
                            </h5>
@@ -64,6 +65,8 @@ const Dashboard = () => {
          <RecentWinner />
 
          <JoinUs />
+
+         <Footer />
 
          {/* <!-- SignIn Area Start --> */}
          <div className="modal fade login-modal sign-in" id="signin" tabIndex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">

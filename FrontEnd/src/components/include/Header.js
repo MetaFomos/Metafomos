@@ -150,12 +150,17 @@ const Header = () => {
                                        </span>
                                     </li> */}
                                     <li style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                                       <span className="mybtn1" onClick={() => checkNet()} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '220px'}}> 
-                                             {isAuthenticated ? (<></>) : (<Link className="" to="/register">Sign Up</Link>)}
-                                       </span>
+                                       {isAuthenticated ? (<></>) : (
+                                          <Link className="" to="/register">
+                                             <span className="mybtn1" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '0px', fontSize: 'unset', width: '220px'}}> 
+                                                Sign Up
+                                             </span>
+                                          </Link>
+                                       )}
+                                       
                                     </li>
                                     <li className="nav-item">
-                                       <Link className="nav-link" to="/">WHO WE ARE</Link>
+                                       <a className="nav-link" href="/" style={{ display: 'flex', justifyContent: 'center' }}>WHO WE ARE</a>
                                     </li>
                                     
                                  </ul>
@@ -164,7 +169,7 @@ const Header = () => {
                                  </a>
                                  <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">
-                                       {isAuthenticated ? (<></>) : (<Link className="nav-link" to="/login">LOGIN</Link>)}
+                                       {isAuthenticated ? (<></>) : (<Link className="nav-link" to="/login" style={{ display: 'flex', justifyContent: 'center' }}>LOGIN</Link>)}
                                     </li>
                                     {/* <li>
                                        <a href="#" className="mybtn1"  data-toggle="modal" data-target="#signin"> Join us</a>

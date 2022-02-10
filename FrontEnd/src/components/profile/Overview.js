@@ -4,6 +4,7 @@ import { setAuthFlag } from '../../actions/auth';
 import { Navigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../include/Footer';
 
 const Overview = () => {
     const { isAuthenticated, authFlag}= useSelector(state => state.auth);
@@ -644,6 +645,7 @@ const Overview = () => {
                 </div>
             </section>
             {/* <!-- User Main Content Area End --> */}
+            <Footer />
         </Fragment>
     )
 }

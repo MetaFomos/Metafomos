@@ -210,6 +210,7 @@
 
   .header .mainmenu-area .navbar .navbar-brand img {
     max-height: 50px;
+    width: 110px;
   }
 
   .header .mainmenu-area .navbar #main_menu .navbar-nav .nav-item .nav-link .mr-hover-effect {
@@ -669,6 +670,7 @@
 
   .header .mainmenu-area.mainmenu-area2 .navbar .navbar-brand img {
     max-height: 50px;
+    width: 110px;
   }
 
   .breadcrumb-area h2 {

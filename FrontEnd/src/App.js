@@ -6,7 +6,6 @@ import store from './store';
 import Dashboard from './components/dashboard/Dashboard';
 //include header, footer
 import Header from './components/include/Header';
-import Footer from './components/include/Footer';
 //auth
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
@@ -47,9 +46,7 @@ function App() {
             <Route exact path="/profile/overview" element={ <Overview /> } />
             <Route exact path="/connect" element={ <Connect />  } />
           </Routes>
-          <Footer />
       </Router>
-      {/* <Footer /> */}
     </Provider>
   );
 }
