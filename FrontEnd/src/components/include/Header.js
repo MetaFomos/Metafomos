@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
-import { connect, connect as connectWallet } from '../../actions/blockchain';
+import { connect as connectWallet } from '../../actions/blockchain';
 import { logout } from '../../actions/auth';
 import '../../assets/scss/Header/Header.scss';
 
@@ -23,7 +23,7 @@ const Header = () => {
          navigate("/login");
       } else {
          const warningBtn = document.querySelector('#modal_warning');
-         if (window.ethereum.chainId != 0x38) {
+         if (window.ethereum.chainId != 0x4) {
             warningBtn.click();
          } else {
             // if(blockchain.loading || blockchain.account) return;
@@ -34,12 +34,14 @@ const Header = () => {
 
    const connectWalletFunc = () => {
       dispatch(connectWallet());
+      
+      // console.log(await SmartContractObj.methods.balanceOf("0x32058C6343FDdB311639D6f5D43627799eE5EBc5").call());
    }
 
    const switchNetwork = async () => {
       await window.ethereum.request({
          method: 'wallet_switchEthereumChain',
-         params: [{ chainId: '0x38' }], // chainId must be in hexadecimal numbers
+         params: [{ chainId: '0x4' }], // chainId must be in hexadecimal numbers
       });
       connectWalletFunc();
    }
@@ -301,7 +303,7 @@ const Header = () => {
                                     
                                     <div className="form-group">
                                        {/* <button type="submit" className="mybtn2" style={{textTransform: 'unset'}}>Switch to BSC Network</button> */}
-                                       <div data-dismiss="modal" className='spec_btn' style={{ marginBottom: '0px' }} onClick={() => switchNetwork()}>Switch to BSC Network</div>
+                                       <div data-dismiss="modal" className='spec_btn' style={{ marginBottom: '0px' }} onClick={() => switchNetwork()}>Switch to Rinkeby Net</div>
                                     </div>
                                  </form>
                               </div>

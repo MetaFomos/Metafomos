@@ -47,7 +47,7 @@ export const connect = () => {
             });
             console.log(networkId);
             console.log(accounts[0]);
-            if(networkId == 56) {
+            if(networkId == 4) {
                const SmartContractObj = new Web3EthContract(
                   SmartContract, //abi 
                   '0x55d398326f99059ff775485246999027b3197955' // ** IMPORTANT ** PASTE CONTRACT ADDRESS
@@ -56,9 +56,10 @@ export const connect = () => {
                   connectSuccess({
                      account: accounts[0],
                      smartContract: SmartContractObj,
-                     web3: web3
+                     // web3: web3
                   })
                );
+               
                //Add listeners start
                ethereum.on('accountsChanged', accounts => {
                   dispatch(updateAccount(accounts[0]));
@@ -73,7 +74,7 @@ export const connect = () => {
                });
                //Add listeners end
             } else {
-               dispatch(connectFailed('Change network to the BSC Network'))
+               dispatch(connectFailed('Change network to the Rinkeby Test Network'))
             }
          } catch (err) {
             dispatch(connectFailed('Something went wrong.'));
