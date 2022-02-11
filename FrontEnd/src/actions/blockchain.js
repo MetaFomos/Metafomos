@@ -1,6 +1,6 @@
 import Web3EthContract from 'web3-eth-contract';
 import Web3 from 'web3';
-// import SmartContract from '';
+import SmartContract from '../contracts/SampleContract.json';
 
 const connectRequest = () => {
    return {
@@ -48,15 +48,15 @@ export const connect = () => {
             console.log(networkId);
             console.log(accounts[0]);
             if(networkId == 56) {
-               // const SmartContractObj = new Web3EthContract(
-               //    '',
-               //    ''
-               // );
+               const SmartContractObj = new Web3EthContract(
+                  SmartContract, //abi 
+                  '0x55d398326f99059ff775485246999027b3197955' // ** IMPORTANT ** PASTE CONTRACT ADDRESS
+               );
                dispatch(
                   connectSuccess({
                      account: accounts[0],
-                     // smartContract: SmartContractObj,
-                     // web3: web3
+                     smartContract: SmartContractObj,
+                     web3: web3
                   })
                );
                //Add listeners start

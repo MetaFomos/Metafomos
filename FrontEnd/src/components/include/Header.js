@@ -2,8 +2,9 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
-import { connect as connectWallet } from '../../actions/blockchain';
+import { connect, connect as connectWallet } from '../../actions/blockchain';
 import { logout } from '../../actions/auth';
+import '../../assets/scss/Header/Header.scss';
 
 
 import Web3 from 'web3';
@@ -26,9 +27,13 @@ const Header = () => {
             warningBtn.click();
          } else {
             // if(blockchain.loading || blockchain.account) return;
-            dispatch(connectWallet());
+            connectWalletFunc();
          }
       }
+   }
+
+   const connectWalletFunc = () => {
+      dispatch(connectWallet());
    }
 
    const switchNetwork = async () => {
@@ -36,7 +41,7 @@ const Header = () => {
          method: 'wallet_switchEthereumChain',
          params: [{ chainId: '0x38' }], // chainId must be in hexadecimal numbers
       });
-      await dispatch(connectWallet());
+      connectWalletFunc();
    }
 
    const onLogOut = () => {
@@ -164,7 +169,7 @@ const Header = () => {
                                     </li>
                                     
                                  </ul>
-                                 <a className="navbar-brand" href="/" style={{display: "flex", justifyContent: "center"}}>
+                                 <a className="navbar-brand" href="/" style={{ position: 'sticky', left: '50%', transform: 'translate(-50%, 0)' }}>
                                     <img className="l2" src="../assets/images/logo2.png" alt="" />
                                  </a>
                                  <ul className="navbar-nav ml-auto">

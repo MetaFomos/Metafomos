@@ -1,0 +1,25 @@
+@media only screen and (max-width: 991px) {
+    .main-menu-inner {
+        .navbar-brand {
+            img {
+                display: none;
+            }
+        }
+        .navbar-nav {
+            padding-bottom: 10px;
+        }
+    }
+    .header {
+        .mainmenu-area {
+            .navbar {
+                .user-info-menu-area {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+
+    
+}
