@@ -1294,10 +1294,11 @@ select:focus {
 }
 .hero-area.hero-area2.hero-area4 {
   background: url(../images/home/h4.jpg);
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  background-position-y: -3%;
 }
 .hero-area.hero-area2.hero-area4 .content {
   text-align: center;

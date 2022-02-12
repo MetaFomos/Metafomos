@@ -43,23 +43,23 @@ const Footer = () => {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="flogo">
-                        <a href="#"><img src="../assets/images/footer-ogo.png" alt="" /></a>
+                        <a href="#"><img src="../assets/images/logo2.png" alt="" width="150px" height="86.05px" /></a>
                      </div>
                      <div className="social-links">
                         <ul>
                            <li>
-                              <a href="#">
+                              <a href="https://www.facebook.com/metafomos">
                                  <i className="fab fa-facebook-f"></i>
                               </a>
                            </li>
                            <li>
-                              <a href="#">
+                              <a href="https://twitter.com/MetaFomos">
                                  <i className="fab fa-twitter"></i>
                               </a>
                            </li>
                            <li>
-                              <a href="#">
-                                 <i className="fab fa-pinterest-p"></i>
+                              <a href="https://www.reddit.com/r/MetaFomos/">
+                                 <i className="fab fa-reddit"></i>
                               </a>
                            </li>
                            <li>
@@ -68,7 +68,7 @@ const Footer = () => {
                               </a>
                            </li>
                            <li>
-                              <a href="#">
+                              <a href="https://www.instagram.com/metafomos/">
                                  <i className="fab fa-instagram"></i>
                               </a>
                            </li>

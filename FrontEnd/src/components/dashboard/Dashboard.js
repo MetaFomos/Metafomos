@@ -36,7 +36,7 @@ const Dashboard = () => {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="content">
-                        <div className="content">
+                        <div className="content" style={{ marginTop: '99px' }}>
                            <h5 className="subtitle" style={{ marginBottom: '1px' }}>
                               SHARE | INVITE | EARN
                            </h5>
@@ -44,7 +44,7 @@ const Dashboard = () => {
                               <img src="assets/images/text.png" alt="" />
                            </h1>
                            <div className="links">
-                              <Link to="/login"><span className="mybtn1" style={{ marginTop: '25px' }}>join us now</span></Link>
+                              <Link to="/login"><span className="mybtn1">join us now</span></Link>
                            </div>
                         </div>
                      </div>
