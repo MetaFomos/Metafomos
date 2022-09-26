@@ -9,22 +9,22 @@
 
 <h1 align="center">Welcome to MetaFomos.</h1>
 
-<p align="left" style="font-family: Brush Script MT"> <img src="https://komarev.com/ghpvc/?username=chinmay29hub&label=Profile%20views&color=0e75b6&style=flat" alt="Super-Smile" /> </p>
+<p align="left" style="font-family: Brush Script MT"> <img src="https://komarev.com/ghpvc/?username=chinmay29hub&label=Profile%20views&color=0e75b6&style=flat" alt="MetaFomos" /> </p>
 
 <p align="center">
-  <a href="https://github.com/Super-Smile/github-readme-streak-stats">
-    <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Super-Smile" src="https://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1&theme=monokai-metallian&hide_border=true"/>
+  <a href="https://github.com/MetaFomos/github-readme-streak-stats">
+    <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="MetaFomos" src="https://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1&theme=monokai-metallian&hide_border=true"/>
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/Super-Smile/github-readme-stats">
+  <a href="https://github.com/MetaFomos/github-readme-stats">
     <img
       height="150"
-      src="https://github-readme-stats.vercel.app/api?username=Super-Smile&count_private=true&show_icons=true&custom_title=Super-Smile's%20Github%20Status&hide=issues&theme=vision-friendly-dark"
+      src="https://github-readme-stats.vercel.app/api?username=MetaFomos&count_private=true&show_icons=true&custom_title=MetaFomos's%20Github%20Status&hide=issues&theme=vision-friendly-dark"
     />
    </a>
 
-  <a href="https://github.com/Super-Smile/github-readme-stats">
+  <a href="https://github.com/MetaFomos/github-readme-stats">
     <img
       height="150"
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=MetaFomos&layout=compact&theme=vision-friendly-dark" />
